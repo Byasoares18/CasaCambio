@@ -79,6 +79,7 @@ function criarMoneda (Nombre, sigla, valor) {
 const monedasEnLS = JSON.parse(localStorage.getItem("monedas"));
 console.log(monedasEnLS);
 
+////////////////// dark mode////////////////
 const botonColorMode = document.querySelector("#color-mode");
 const body = document.body;
 
@@ -109,6 +110,8 @@ botonColorMode.addEventListener("click", () => {
         activarDarkMode();
     }
 })
+
+
 let fecha_hoy = new Date();
     console.log(fecha_hoy)
 
